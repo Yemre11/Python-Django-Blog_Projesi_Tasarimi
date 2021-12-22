@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Silme Post</h1>
+    <form active="" method="post">{% csrf_token %}
+        <p>{{post.title}} silmek istediğinize emin misiniz ?</p>
+        <input type="submit" value="Onayla">
+    </form>
+
+
+{% endblock content %}
